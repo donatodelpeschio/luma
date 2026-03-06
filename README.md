@@ -8,19 +8,17 @@
   Beautiful console logs & toast notifications for modern web apps.
 </p>
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/luma-console" style="text-decoration: none">
-    <img src="https://img.shields.io/npm/v/luma-console.svg?color=blue&label=npm" alt="npm version">
-  </a>
-  <a href="https://github.com/donatodelpeschio/luma" style="text-decoration: none">
-    <img src="https://img.shields.io/github/stars/donatodelpeschio/luma?style=social" alt="GitHub stars">
-  </a>
-  <a href="https://www.paypal.com/paypalme/mailboxporter" style="text-decoration: none">
-    <img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate">
-  </a>
-</p>
+<h2 align="center">
+
+[![npm version](https://img.shields.io/npm/v/luma-console.svg?color=blue&label=npm)](https://www.npmjs.com/package/luma-console)
+[![GitHub stars](https://img.shields.io/github/stars/donatodelpeschio/luma?style=social)](https://github.com/donatodelpeschio/luma)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green.svg)](https://donatodelpeschio.github.io/luma/demo/)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/mailboxporter)
+
 
 ---
+</h2>
+
 
 ## ✨ Features
 
