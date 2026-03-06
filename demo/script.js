@@ -73,7 +73,7 @@ document.querySelectorAll("#playground button").forEach(btn => {
 
         switch (action) {
 
-            /* ---------------- LOGS ---------------- */
+            /* LOGS */
             case "log":
                 luma.log("Hello from Luma!");
                 demoConsole.log("Hello from Luma!");
@@ -104,7 +104,7 @@ document.querySelectorAll("#playground button").forEach(btn => {
                 showCode(`luma.info("Informazione utile");`);
                 break;
 
-            /* ---------------- TOASTS ---------------- */
+            /* TOASTS */
             case "toast-success":
                 luma.toast.success("Operazione completata");
                 demoConsole.success("[Toast] Operazione completata");
@@ -129,14 +129,14 @@ document.querySelectorAll("#playground button").forEach(btn => {
                 showCode(`luma.toast.info("Informazione");`);
                 break;
 
-            /* ---------------- BOX ---------------- */
+            /* BOX */
             case "box":
                 luma.box("Questo è un box!");
                 demoConsole.log("[Box] Questo è un box!");
                 showCode(`luma.box("Questo è un box!");`);
                 break;
 
-            /* ---------------- GROUP ---------------- */
+            /* GROUP */
             case "group":
                 demoConsole.group("Operazione complessa");
                 demoConsole.log("Step 1 completato");
@@ -150,7 +150,12 @@ demoConsole.groupEnd();`
                 );
                 break;
 
-            /* ---------------- TIMER ---------------- */
+            case "groupEnd":
+                demoConsole.groupEnd();
+                showCode(`demoConsole.groupEnd();`);
+                break;
+
+            /* TIMER */
             case "timer":
                 const t = demoConsole.timer("Operazione");
                 setTimeout(() => t.end(), 500);

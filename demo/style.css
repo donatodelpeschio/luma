@@ -153,6 +153,13 @@ section h2 {
 .console-line {
     margin-bottom: 6px;
 }
+.console-hint {
+    text-align: right;
+    font-size: 13px;
+    color: var(--subtle);
+    margin-bottom: 6px;
+    opacity: 0.8;
+}
 
 .console-success { color: #4caf50; }
 .console-error   { color: #f44336; }
