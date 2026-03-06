@@ -1,0 +1,25 @@
+{
+  "name": "luma-console",
+  "version": "0.1.0",
+  "description": "Beautiful console logs for modern developers",
+  "main": "dist/luma.js",
+  "module": "dist/luma.js",
+  "scripts": {
+    "build": "esbuild src/luma.js --outfile=dist/luma.js --sourcemap=inline && esbuild src/luma.js --minify --outfile=dist/luma.min.js --sourcemap",
+    "dev": "esbuild src/luma.js --outfile=dist/luma.js --sourcemap=inline --watch"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "pretty",
+    "colors",
+    "debug",
+    "browser",
+    "node"
+  ],
+  "author": "Donato del Peschio",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.27.3"
+  }
+}

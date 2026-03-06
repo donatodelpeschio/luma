@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luma Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<header id="hero">
+    <h1>Luma</h1>
+    <p>Beautiful console logs & toast notifications</p>
+    <div class="hero-buttons">
+        <button id="try">Try it</button>
+        <a href="https://github.com/DonatoDelPeschio/luma" target="_blank">GitHub</a>
+        <a href="https://paypal.me/DonatoDelPeschio" target="_blank">Donate ❤️</a>
+    </div>
+</header>
+
+<!-- PLAYGROUND -->
+<section id="playground">
+    <h2>Playground</h2>
+    <div class="buttons">
+        <button data-action="log">Log</button>
+        <button data-action="success">Success</button>
+        <button data-action="error">Error</button>
+        <button data-action="warn">Warn</button>
+        <button data-action="info">Info</button>
+
+        <button data-action="toast-success">Toast Success</button>
+        <button data-action="toast-error">Toast Error</button>
+        <button data-action="toast-warn">Toast Warn</button>
+        <button data-action="toast-info">Toast Info</button>
+    </div>
+</section>
+
+<!-- CONSOLE EMULATOR -->
+<section id="console">
+    <h2>Console Output</h2>
+    <div id="console-output"></div>
+</section>
+
+<!-- CODE VIEWER -->
+<section id="code-viewer">
+    <h2>Code</h2>
+    <pre><code id="code-block"></code></pre>
+</section>
+
+<!-- INSTALLATION -->
+<section id="installation">
+    <h2>Installation</h2>
+    <pre><code>
+&lt;script src="https://cdn.jsdelivr.net/npm/luma-console/dist/luma.min.js"&gt;&lt;/script&gt;
+</code></pre>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Made with ❤️ by Donato del Peschio</p>
+    <a href="https://paypal.me/DonatoDelPeschio" target="_blank">Donate</a>
+</footer>
+
+<!-- IMPORTANTISSIMO: GLI SCRIPT VANNO QUI -->
+<script src="../dist/luma.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

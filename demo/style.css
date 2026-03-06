@@ -1,0 +1,189 @@
+/* ---------------------------------------------------------
+ *  LUMA DEMO — Modern UI
+ * --------------------------------------------------------- */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding-bottom: 80px;
+}
+
+/* LIGHT THEME */
+:root {
+    --bg: #f7f7f7;
+    --text: #222;
+    --subtle: #666;
+    --card: #fff;
+    --border: #ddd;
+    --accent: #2196f3;
+    --accent-hover: #1976d2;
+}
+
+/* DARK THEME */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #121212;
+        --text: #eaeaea;
+        --subtle: #aaa;
+        --card: #1e1e1e;
+        --border: #333;
+        --accent: #64b5f6;
+        --accent-hover: #42a5f5;
+    }
+}
+
+/* ---------------------------------------------------------
+ *  HERO SECTION
+ * --------------------------------------------------------- */
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-bottom: 40px;
+}
+
+#hero h1 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-buttons a,
+.hero-buttons button {
+    background: white;
+    color: var(--accent);
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.hero-buttons a:hover,
+.hero-buttons button:hover {
+    background: #f0f0f0;
+}
+
+/* ---------------------------------------------------------
+ *  SECTIONS
+ * --------------------------------------------------------- */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------------
+ *  PLAYGROUND BUTTONS
+ * --------------------------------------------------------- */
+#playground .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#playground button {
+    padding: 10px 18px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#playground button:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+/* ---------------------------------------------------------
+ *  CONSOLE EMULATOR
+ * --------------------------------------------------------- */
+#console-output {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    height: 260px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+/* Log styles */
+.console-line {
+    margin-bottom: 6px;
+}
+
+.console-success { color: #4caf50; }
+.console-error   { color: #f44336; }
+.console-warn    { color: #ff9800; }
+.console-info    { color: #2196f3; }
+.console-log     { color: var(--text); }
+
+/* ---------------------------------------------------------
+ *  CODE VIEWER
+ * --------------------------------------------------------- */
+#code-viewer,#installation pre {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    font-size: 14px;
+}
+
+/* ---------------------------------------------------------
+ *  FOOTER
+ * --------------------------------------------------------- */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    color: var(--subtle);
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
