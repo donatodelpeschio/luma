@@ -37,7 +37,7 @@
 ## 🚀 Demo
 
 👉 **Live Demo:**  
-https://donatodelpeschio.github.io/luma/
+https://donatodelpeschio.github.io/luma/demo/
 
 
 
